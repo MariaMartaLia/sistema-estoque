@@ -15,14 +15,12 @@ CREATE TABLE movimentacao(
     quantidade INTEGER NOT NULL CHECK (quantidade > 0),
     data_movimentacao TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
     observacao TEXT,
-
-    CONSTRAINT fk_produto
+     CONSTRAINT fk_produto
         FOREIGN KEY (produto_id)
         REFERENCES produto(id)
         ON DELETE RESTRICT
 );
-
-CREATE OR REPLACE FUNCTION validar_estoque()
+ CREATE OR REPLACE FUNCTION validar_estoque()
 RETURNS TRIGGER AS $$
 DECLARE
     estoque_atual INTEGER;

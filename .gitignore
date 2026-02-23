@@ -1,0 +1,16 @@
+# Ambiente virtual
+venv/
+
+# Variavel de ambiente
+.env
+
+# Node
+node_modules/
+
+# Arquivos Python
+__pycache__/
+*.pyc
+
+# Build frontend
+dist/
+
