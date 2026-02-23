@@ -1,16 +1,49 @@
-# Ambiente virtual
+# ======================
+# PYTHON
+# ======================
 venv/
-
-# Variavel de ambiente
-.env
-
-# Node
-node_modules/
-
-# Arquivos Python
 __pycache__/
-*.pyc
+*.py[cod]
+*.pyo
+*.pyd
+*.log
 
-# Build frontend
+# =====================
+# ENVERONMENT
+# =====================
+.env
+.env.*
+*.env
+
+
+# =====================
+NODE / REACT
+# =====================
+frontend/node_moludes/
+f /dist/
+frontend/.vite/
+node_moludes/
+
+# =====================
+# BUILD
+# =====================
 dist/
+build/
 
+# =====================
+# IDE
+# =====================
+.vscode/
+.idea/
+
+# ====================
+# OS FILES
+# ====================
+.DS_Store
+thumbs.db
+
+# ==================
+# DATABASE LOCAL
+# ==================
+*.sqlite3
+*.db
